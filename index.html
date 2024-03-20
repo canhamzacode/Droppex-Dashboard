@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Droppex</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <aside>
+        <div class="logo appPadding">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="list-item">
+          <li class="paddingLeft">
+            <button class="btn">
+              <img src="img/folder-add.png" alt="folder-add-icon" />
+              <p>New folder</p>
+            </button>
+          </li>
+          <li class="paddingLeft active">
+            <img src="img/category.png" alt="home-icon" />
+            <p>Home</p>
+          </li>
+          <li class="paddingLeft">
+            <img src="img/trash.png" alt="trash-icon" />
+            <p>Trash</p>
+          </li>
+        </ul>
+        <hr />
+        <div class="list-item">
+          <li class="paddingLeft">
+            <img src="img/cloud.png" alt="cloud-icon" />
+            <p>Storage</p>
+          </li>
+          <li class="paddingLeft">
+            <div class="storage-status">
+              <div class="progress">
+                <div class="innerRadius">
+                  <p>10%</p>
+                </div>
+              </div>
+              <p>10GB / 100GB</p>
+            </div>
+          </li>
+        </div>
+      </aside>
+      <section class="appPadding">
+        <header>
+          <div class="search top-function">
+            <img src="img/search-icon.png" alt="search-icon" />
+            <input
+              type="text"
+              placeholder="Search for file, folder, shared storehouse"
+            />
+            <img src="img/filter.png" alt="filter" />
+          </div>
+          <div class="upload top-function">
+            <img src="img/cloud-cross.png" alt="cloud-cross-icon" />
+            <p>
+              Drag and drop <a href="">files</a> , <a href="">folders</a> or
+              <a href="">links</a>
+            </p>
+          </div>
+          <div class="action">
+            <button>
+              <img src="img/link.png" alt="link-icon" />
+            </button>
+            <button class="profile">
+              <img src="img/profile.png" alt="profile-icon" />
+            </button>
+          </div>
+        </header>
+        <div class="flex">
+          <p>Ramy Main Drive</p>
+          <button>
+            <img src="img/info.png" alt="info-icon" />
+          </button>
+        </div>
+        <div class="fileAction">
+          <div class="flex action-title">
+            <p>Select folder or file to see options</p>
+            <div class="filters">
+              <p>No item selected</p>
+              <div class="filter-icons">
+                <button>
+                  <img src="img/Swap.png" alt="swap-icon" />
+                </button>
+                <button>
+                  <img src="img/funnel.png" alt="funnel-icon" />
+                </button>
+              </div>
+              <div class="filter-icons2">
+                <button>
+                  <img src="img/showHide.png" alt="show/hide-icon" />
+                </button>
+                <button>
+                  <img src="img/checkbox.png" alt="checkbox-icon" />
+                </button>
+                <button>
+                  <img src="img/row-vertical.png" alt="row-vertical-icon" />
+                </button>
+                <button>
+                  <img
+                    src="img/arrow-square-left.png"
+                    alt="row-vertical-icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                    <p>Name</p>
+                  </td>
+                  <td>
+                    <p>Uploaded</p>
+                  </td>
+                  <td>
+                    <p>Size</p>
+                  </td>
+                  <td>
+                    <p>View No.</p>
+                  </td>
+                  <td>
+                    <p>Last modified</p>
+                  </td>
+                  <td>
+                    <button>
+                      <img src="img/arrow-down.png" alt="arrow-down" />
+                    </button>
+                  </td>
+                </tr>
+              </thead>
+              <tbody class="tbody">
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                    <div>
+                      <img src="img/folder.png" alt="folder" />
+                      <p>Documents</p>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Nov 26, 2022 3:18AM</p>
+                  </td>
+                  <td>
+                    <p>1.8 MB</p>
+                  </td>
+                  <td>
+                    <p>0 times</p>
+                  </td>
+                  <td>
+                    <div>
+                      <p>Dec 10, 2022 2:00PM</p>
+                      <p>You</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                    <div class="active-doc">
+                      <img src="img/the-file.png" alt="img" />
+                      <p>the file that is the ... .png</p>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Nov 26, 2022 3:18AM</p>
+                  </td>
+                  <td>
+                    <p>86.8 KB</p>
+                  </td>
+                  <td>
+                    <p>2 times</p>
+                  </td>
+                  <td>
+                    <div>
+                      <p>Dec 10, 2022 2:00PM</p>
+                      <p>You</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                    <div class="active-doc">
+                      <img src="img/pdf.png" alt="folder" />
+                      <p>Project Details.pdf</p>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Nov 26, 2022 3:18AM</p>
+                  </td>
+                  <td>
+                    <p>1.8 MB</p>
+                  </td>
+                  <td>
+                    <p>0 times</p>
+                  </td>
+                  <td>
+                    <div>
+                      <p>Dec 10, 2022 2:00PM</p>
+                      <p>user@gmail...</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                    <div class="active-doc">
+                      <img src="img/pdf.png" alt="folder" />
+                      <p>Project Details.pdf</p>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Nov 26, 2022 3:18AM</p>
+                  </td>
+                  <td>
+                    <p>1.8 MB</p>
+                  </td>
+                  <td>
+                    <p>0 times</p>
+                  </td>
+                  <td>
+                    <div>
+                      <p>Dec 10, 2022 2:00PM</p>
+                      <p>user@gmail...</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                    <div class="active-doc">
+                      <img src="img/docs.png" alt="docs" />
+                      <p>employees.docx</p>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Nov 26, 2022 3:18AM</p>
+                  </td>
+                  <td>
+                    <p>1.8 MB</p>
+                  </td>
+                  <td>
+                    <p>0 times</p>
+                  </td>
+                  <td>
+                    <div>
+                      <p>Dec 10, 2022 2:00PM</p>
+                      <p>Yous</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                    <div>
+                      <img src="img/coding.png" alt="folder" />
+                      <p>coding.jpg</p>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Nov 26, 2022 3:18AM</p>
+                  </td>
+                  <td>
+                    <p>1.8 MB</p>
+                  </td>
+                  <td>
+                    <p>0 times</p>
+                  </td>
+                  <td>
+                    <div>
+                      <p>Dec 10, 2022 2:00PM</p>
+                      <p>+966 123456789</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                    <div class="active-doc">
+                      <img src="img/docs.png" alt="docs" />
+                      <p>employees.docx</p>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Nov 26, 2022 3:18AM</p>
+                  </td>
+                  <td>
+                    <p>1.8 MB</p>
+                  </td>
+                  <td>
+                    <p>0 times</p>
+                  </td>
+                  <td>
+                    <div>
+                      <p>Dec 10, 2022 2:00PM</p>
+                      <p>Yous</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                    <div class="active-doc">
+                      <img src="img/the-file.png" alt="img" />
+                      <p>the file that is the ... .png</p>
+                    </div>
+                  </td>
+                  <td>
+                    <p>Nov 26, 2022 3:18AM</p>
+                  </td>
+                  <td>
+                    <p>86.8 KB</p>
+                  </td>
+                  <td>
+                    <p>2 times</p>
+                  </td>
+                  <td>
+                    <div>
+                      <p>Dec 10, 2022 2:00PM</p>
+                      <p>You</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

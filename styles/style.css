@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* global-variables / reusable styles */
+:root {
+  --btn-color: #57acdc;
+  --side-bar-bg: #121212;
+  --bg-primanry: #1e1e1e;
+  --white: #fff;
+  --text-color: #939393;
+  --profile-bg: #57acdc1c;
+  --list-background: #8b8b8b0f;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+}
+
+.appPadding {
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.paddingLeft {
+  padding-left: 40px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  background: var(--bg-primanry);
+  height: 100vh;
+}
+
+aside {
+  background: var(--side-bar-bg);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+button {
+  cursor: pointer;
+}
+button:focus {
+  outline: 1px solid var(--white);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  outline: none;
+  width: 128px;
+  background: var(--btn-color);
+  height: 44px;
+  border-radius: 50px;
+  padding: 10px;
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.list-item li {
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active {
+  border-left: 4px solid var(--btn-color);
+  color: var(--btn-color);
+}
+
+hr {
+  height: 1px;
+  background: var(--bg-primanry);
+  border: 1px solid var(--bg-primanry);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--side-bar-bg);
+  border-radius: 6px;
+}
+
+/* progress/storage status */
+.storage-status {
+  width: 170px;
+  height: 201px;
+  background: var(--bg-primanry);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.storage-status p {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.progress {
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  background: var(--side-bar-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progress::before {
+  content: "";
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  background: conic-gradient(var(--btn-color) 0deg, var(--btn-color) 180deg);
+  clip: rect(0px, 90px, 90px, 45px);
+  z-index: 1;
+}
+.innerRadius {
+  z-index: 2;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--bg-primanry);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerRadius p {
+  color: var(--btn-color);
+}
+
+/* main section */
+
+section {
+  padding-right: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: hidden;
+}
+
+section hr {
+  border: 1px solid #fafafa1a;
+}
+section button {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header button.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--profile-bg);
+  border-radius: 50%;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-function {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 0 15px;
+}
+
+.search {
+  border: 1px solid var(--text-color);
+  max-width: 627px;
+  min-width: 430px;
+}
+
+.search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text-color);
+}
+
+.search input::placeholder {
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.search input::-ms-value {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.upload {
+  border: 1px dashed var(--text-color);
+  max-width: 351px;
+}
+
+.upload p {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.upload p a {
+  color: var(--btn-color);
+}
+
+.fileAction {
+  border-top: 1px solid var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.action-title p {
+  color: var(--text-color);
+  font-size: 12px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.filter-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-left: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color);
+}
+
+.filter-icons2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* table style */
+table {
+  width: 100%;
+  overflow-y: auto;
+  height: 90vh;
+  display: block;
+  padding-bottom: 15px;
+}
+
+thead,
+tbody {
+  width: 100%;
+  display: block;
+}
+
+table thead tr {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 120px 120px 1fr 20px;
+  gap: 25px;
+  padding: 15px;
+  background: var(--side-bar-bg);
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.fileAction tbody {
+  height: 600px;
+}
+
+tbody tr {
+  display: grid;
+  cursor: pointer;
+  grid-template-columns: 1fr 0.7fr 120px 120px 1fr 20px;
+  gap: 25px;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+tbody tr:nth-child(even) {
+  background: var(--list-background);
+}
+
+td {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+thead tr td p {
+  font-size: 16px;
+}
+
+tr td div img {
+  width: 30px;
+  height: 30px;
+}
+tr td div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.active-doc {
+  position: relative;
+}
+
+.active-doc::before {
+  content: "";
+  bottom: 10px;
+  left: -10px;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--btn-color);
+}
